@@ -32,6 +32,7 @@ Ahora en la maquina víctima se instala Google authenticator para reforzar la se
 ![Pas2](imagenes/Instalacion-google.jpg)
 
 Cuando ya esté en funcionamiento Google authenticator, este nos mostrará un código QR en el cual hay que escanear con el teléfono y a la hora de escanearlo nos saldrá esto
+
 ![Paso3](imagenes/Escaneo.jpg)
 
 Luego se procede a terminar de configurar el google authenticator
