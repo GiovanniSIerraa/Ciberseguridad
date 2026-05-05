@@ -47,8 +47,8 @@ Configuracion ssh
 
 Ahora se intenta hacer el login de nuevo desde la maquina atacante y como se puede ver pide contraseña y código de Google authenticator
 
-![Paso6](imagenes/Instalacion-google.jpg)
+![Paso6](imagenes/Codigo.jpg)
 
 Finalmente se realiza denuevo el ataque mediante hydra y funciona de manera igual que antes, pero este fallaría gracias a mfa
 
-![Paso7](imagenes/Instalacion-google.jpg)
+![Paso7](imagenes/Ataque-2.jpg)
