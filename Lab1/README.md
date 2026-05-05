@@ -27,6 +27,6 @@ Primero que nada se crea el archivo
 ![Paso1](imagenes/Archivo-config-bancario.jpg)
 
 Luego se realiza el Hash
-![Hash](imagenes/realizacion%20de%20hash.jpg)
+![Hash](imagenes/Realizacion%20de%20Hash.jpg)
 
 
