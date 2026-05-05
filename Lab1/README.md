@@ -32,4 +32,17 @@ Luego se realiza el Hash
 En esta parte verificamos el Hash
 ![Paso3](imagenes/Verificacion%20de%20Hash.jpg)
 
+Aqui creamos las llaves
+![Paso4](imagenes/Creacion-de-llaves.jpg)
 
+luego realizamos la firma y la verificacion de esta
+![Paso5](imagenes/Firma.jpg)
+
+Simulamos el ataque, pero se hace cambios a los caracteres
+![Paso6](imagenes/Cambios-caracteres.jpg)
+
+Se genera el hash al nuevo archivo que se modificó recientemente, como se muestra en la imagen el hash cambio
+![Paso7](imagenes/Hasg-nuevo-archivo.jpg)
+
+Se vuelve a verificar la firma y se puede ver que esta falla
+![Paso8](imagenes/Firma-falla.jpg)
