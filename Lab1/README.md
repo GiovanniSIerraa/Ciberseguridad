@@ -22,7 +22,11 @@ El propósito de este laboratorio fue comprender cómo funcionan los mecanismos 
 
 
 Evidencias:
+
 Primero que nada se crea el archivo
 ![Paso1](imagenes/Archivo-config-bancario.jpg)
+
+Luego se realiza el Hash
+![Paso2](imagenes/RealizaciondeHash.jpg)
 
 
