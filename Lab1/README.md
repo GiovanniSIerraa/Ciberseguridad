@@ -4,6 +4,7 @@ El laboratorio fue desarrollado utilizando Ubuntu Server. En este entorno se sim
 
 Descripción de la Actividad:
 La actividad consistió en aplicar mecanismos criptográficos para proteger un archivo considerado crítico. Para ello, se utilizó el algoritmo SHA-256 para generar una huella digital del archivo, además de herramientas como OpenSSL para la creación de claves y la firma digital.
+
 Dinámica:
 Generación de Hash crea un archivo config_bancaria.txt. Usa sha256sum para generar su huella digital.
 Simulación de Ataque: Un "atacante" modifica un solo carácter (ej: cambia un 0 por un 1 en un monto).
@@ -12,6 +13,7 @@ Firma Digital (OpenSSL):
 Generar llave privada: openssl genrsa -out privada.pem 2048
 Generar llave pública: openssl rsa -in privada.pem -pubout -out publica.pem
 Firmar archivo: openssl dgst -sha256 -sign privada.pem -out firma.bin config_bancaria.txt
+
 Que se hará en el lab:
 En esta actividad se generará un archivo que representará una configuración bancaria simulada. se le aplicará un algoritmo hash (SHA-256) con el fin de obtener su huella digital.
 Posteriormente, se realizará una modificación mínima en el contenido del archivo, simulando una posible alteración o ataque. Luego de este cambio, se volverá a calcular el hash para comparar los resultados y comprobar si existen diferencias.
