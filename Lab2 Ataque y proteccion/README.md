@@ -38,12 +38,16 @@ Cuando ya esté en funcionamiento Google authenticator, este nos mostrará un c�
 Luego se procede a terminar de configurar el google authenticator
 ![Paso4](imagenes/Configuracion-google.jpg)
 
-![Paso4](imagenes/configuracion-2.jpg)
+![Paso](imagenes/Configuracio-2.jpg)
+
 Configuracion ssh
+
 ![Paso5](imagenes/Configuracion-ssh.jpg)
 
 Ahora se intenta hacer el login de nuevo desde la maquina atacante y como se puede ver pide contraseña y código de Google authenticator
+
 ![Paso6](imagenes/Instalacion-google.jpg)
 
 Finalmente se realiza denuevo el ataque mediante hydra y funciona de manera igual que antes, pero este fallaría gracias a mfa
+
 ![Paso7](imagenes/Instalacion-google.jpg)
