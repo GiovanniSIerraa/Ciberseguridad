@@ -42,7 +42,7 @@ Simulamos el ataque, pero se hace cambios a los caracteres
 ![Paso6](imagenes/Cambios-caracteres.jpg)
 
 Se genera el hash al nuevo archivo que se modificó recientemente, como se muestra en la imagen el hash cambio
-![Paso7](imagenes/Hasg-nuevo-archivo.jpg)
+![Paso7](imagenes/Hash-nuevo-archivo.jpg)
 
 Se vuelve a verificar la firma y se puede ver que esta falla
 ![Paso8](imagenes/Firma-falla.jpg)
