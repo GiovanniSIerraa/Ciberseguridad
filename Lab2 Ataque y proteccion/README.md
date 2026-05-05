@@ -38,6 +38,7 @@ Cuando ya esté en funcionamiento Google authenticator, este nos mostrará un c�
 Luego se procede a terminar de configurar el google authenticator
 ![Paso4](imagenes/Configuracion-google.jpg)
 
+Configuracion
 ![Paso](imagenes/Configuracio-2.jpg)
 
 Configuracion ssh
