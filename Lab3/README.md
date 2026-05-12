@@ -70,17 +70,17 @@ Como se puede ver en wireshark, si estaria interceptando con exito las credencia
 ![Paso8](imagenes/usuario-interceptado.png)
 
 
-Para poder evitar que los datos viajen en texto plano, seria impplementar un tunel ssh
+Para poder evitar que los datos viajen en texto plano, seria implementar un tunel ssh
 
 ![Paso9](imagenes/tunel-comando.png)
 
 
-Ahora si se cambia el filtro a ssh se puede ver que lo interceptado ahora estaria incriptado
+Ahora si se cambia el filtro a ssh se puede ver que lo interceptado ahora estaria incriptado, en el cual estaria bien
 
 ![Paso10](imagenes/encriptado.png)
 
 
-Ahora se hara la creacion de llaves
+Ahora se hara la creacion de llaves mediante los comandos que se vera ahora
 
 ![Paso11](imagenes/llaves.png)
 
@@ -98,7 +98,7 @@ aqui se configura el archivo ssh para desactivar que nos pida la autenticaicon m
 Aqui podemos ver una ves puesto el comando para la conexion ssh no nos pide la contra y solo la clave de la llave de acceso que hicimos anteriormente.
 
 
-![Paso14](imagenes/conexion-ssh.png)
+![Paso14](imagenes/Conexion-ssh.png)
 
 
 Ahora para finalizar pasamos a la etapa de implementacion de ssl, Aca creamos el certificado ssl.
@@ -119,7 +119,9 @@ configuracion archivo ssl
 ![Paso17](imagenes/archivo-config-ssl.png)
 
 
-Aqui se pude ver que con las configuraciones ya se puede entrar mediante esta url y coon eso se puede abrir wirehsark y ingresar la credneciales de la pagina para interveptarlas.
+Aqui se pude ver que con las configuraciones ya se puede entrar mediante esta url y coon eso se puede abrir wirehsark y ingresar la credneciales de la pagina para interceptarlas.
+
+
 ![Paso18](imagenes/final.png)
 
 
