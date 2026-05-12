@@ -33,57 +33,75 @@ La finalidad de este laboratorio es comprender la importancia de proteger las co
 DEMOSTRACION:
 
 Primero que nada, en la maquina que se atacara se instala apache para asi poder levantar la pagina, Luego verificamos que ese este en funcionamiento y levantado
+
 ![Paso1](imagenes/Apache.png)
 
 Luego modificaremos el archivo index.html para asi poder rellenarlo
-![Paso1](imagenes/Ataque-hydra.jpg)
+
+![Paso2](imagenes/index-html.png)
+
 
 Aqui se rellena el index.html con algo simple para poder hacer el login
-![Paso1](imagenes/Ataque-hydra.jpg)
+
+![Paso3](imagenes/Formulario.png)
+
 
 Aqui se instala wireshark en la maquina
-![Paso1](imagenes/Ataque-hydra.jpg)
+
+![Paso4](imagenes/instalacion-wireshark.png)
 
 Aqui se mostrarian las interfaz en la cual habria que elegir la que estaria usando las maquinas virtuales
-![Paso1](imagenes/Ataque-hydra.jpg)
+
+![Paso5](imagenes/wireshark.png)
+
 
 Aqui se pondria el filtro en el cual estariamos trabajando, seria el metodo post
-![Paso1](imagenes/Ataque-hydra.jpg)
 
-Ahora para interceptar el trafico con wireshark necesitamos ir a la pagina que hicimis y inciar con la credencial para poder interceptar los datos
-![Paso1](imagenes/Ataque-hydra.jpg)
+![Paso6](imagenes/Filtro.png)
+
+Ahora para interceptar el trafico con wireshark necesitamos ir a la pagina que hicimos y inciar con la credencial para poder interceptar los datos
+
+
+![Paso7](imagenes/login.png)
+
 
 Como se puede ver en wireshark, si estaria interceptando con exito las credenciales ingresadas
-![Paso1](imagenes/Ataque-hydra.jpg)
 
-Para poder evitar que los viajen en un texto plano, seria impplementar un tunel ssh
-![Paso1](imagenes/Ataque-hydra.jpg)
+![Paso8](imagenes/usuario-interceptado.png)
+
+
+Para poder evitar que los datos viajen en texto plano, seria impplementar un tunel ssh
+
+![Paso9](imagenes/tunel-comando.png)
+
 
 Ahora si se cambia el filtro a ssh se puede ver que lo interceptado ahora estaria incriptado
-![Paso1](imagenes/Ataque-hydra.jpg)
+
+![Paso10](imagenes/encriptado.png)
+
 
 Ahora se hara la creacion de llaves
-![Paso1](imagenes/Ataque-hydra.jpg)
+![Paso11](imagenes/Ataque-hydra.jpg)
 
 La llave es agregada al servidor
-![Paso1](imagenes/Ataque-hydra.jpg)
+![Paso12](imagenes/Ataque-hydra.jpg)
 
 aqui se configura el archivo ssh para desactivar que nos pida la autenticaicon mediante la contrasena
-![Paso1](imagenes/Ataque-hydra.jpg)
+![Paso13](imagenes/Ataque-hydra.jpg)
 
 Aqui podemos ver una ves puesto el comando para la conexion ssh no nos pide la contra y solo la clave de la llave de acceso que hicimos anteriormente.
-![Paso1](imagenes/Ataque-hydra.jpg)
+![Paso14](imagenes/Ataque-hydra.jpg)
 
 Ahora para finalizar pasamos a la etapa de implementacion de ssl, Aca creamos el certificado ssl.
-![Paso1](imagenes/Ataque-hydra.jpg)
+![Paso15](imagenes/Ataque-hydra.jpg)
 
 Aca activamos el ssl en apache con los siguentes comandos
-![Paso1](imagenes/Ataque-hydra.jpg)
+![Paso16](imagenes/Ataque-hydra.jpg)
 
 configuracion archivo ssl
-![Paso1](imagenes/Ataque-hydra.jpg)
+![Paso17](imagenes/Ataque-hydra.jpg)
 
 Aqui se pude ver que con las configuraciones ya se puede entrar mediante esta url y coon eso se puede abrir wirehsark y ingresar la credneciales de la pagina para interveptarlas.
-![Paso1](imagenes/Ataque-hydra.jpg)
+![Paso18](imagenes/Ataque-hydra.jpg)
 
 
