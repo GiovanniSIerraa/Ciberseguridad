@@ -26,29 +26,49 @@ ssh
 Demostracion:
 
 aquí se realiza el ataque con hydra y como se puede visualizar el ataque fue exitoso, donde se consiguió la contraseña y el usuario
+
 ![Paso1](imagenes/Ataque-hydra.jpg)
 
+
 Ahora en la maquina víctima se instala Google authenticator para reforzar la seguridad
+
+
 ![Pas2](imagenes/Instalacion-google.jpg)
 
-Cuando ya esté en funcionamiento Google authenticator, este nos mostrará un código QR en el cual hay que escanear con el teléfono y a la hora de escanearlo nos saldrá esto
+
+Cuando ya esté en funcionamiento Google authenticator, este nos mostrará un código QR en el cual hay que escanear con el teléfono y a la hora de escanearlo nos 
+saldrá esto
+
 
 ![Paso3](imagenes/Escaneo.jpg)
 
+
+
 Luego se procede a terminar de configurar el google authenticator
+
+
 ![Paso4](imagenes/Configuracion-google.jpg)
 
+
 Configuracion
+
+
 ![Paso](imagenes/Configuracio-2.jpg)
+
 
 Configuracion ssh
 
+
 ![Paso5](imagenes/Configuracion-ssh.jpg)
+
 
 Ahora se intenta hacer el login de nuevo desde la maquina atacante y como se puede ver pide contraseña y código de Google authenticator
 
+
 ![Paso6](imagenes/Codigo.jpg)
 
+
 Finalmente se realiza denuevo el ataque mediante hydra y funciona de manera igual que antes, pero este fallaría gracias a mfa
+
 
 ![Paso7](imagenes/Ataque-2.jpg)
