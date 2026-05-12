@@ -26,6 +26,8 @@ Apache
 SSH
 
 SSL
+
+
 ¿Qué se observará?
 Captura de tráfico HTTP sin cifrado utilizando Wireshark.
 Visualización de información transmitida en texto plano.
@@ -35,6 +37,7 @@ Diferencia entre tráfico inseguro y tráfico cifrado.
 Verificación de que la información ya no es legible tras aplicar seguridad.
 
 La finalidad de este laboratorio es comprender la importancia de proteger las comunicaciones dentro de una red. A través del análisis de tráfico se podrá evidenciar cómo protocolos inseguros permiten interceptar información sensible.
+
 
 DEMOSTRACION:
 
