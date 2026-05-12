@@ -81,27 +81,45 @@ Ahora si se cambia el filtro a ssh se puede ver que lo interceptado ahora estari
 
 
 Ahora se hara la creacion de llaves
-![Paso11](imagenes/Ataque-hydra.jpg)
+
+![Paso11](imagenes/llaves.png)
+
 
 La llave es agregada al servidor
-![Paso12](imagenes/Ataque-hydra.jpg)
+
+![Paso12](imagenes/llave-servidor.png)
+
 
 aqui se configura el archivo ssh para desactivar que nos pida la autenticaicon mediante la contrasena
-![Paso13](imagenes/Ataque-hydra.jpg)
+
+![Paso13](imagenes/ssh-config.png)
+
 
 Aqui podemos ver una ves puesto el comando para la conexion ssh no nos pide la contra y solo la clave de la llave de acceso que hicimos anteriormente.
-![Paso14](imagenes/Ataque-hydra.jpg)
+
+
+![Paso14](imagenes/conexion-ssh.png)
+
 
 Ahora para finalizar pasamos a la etapa de implementacion de ssl, Aca creamos el certificado ssl.
-![Paso15](imagenes/Ataque-hydra.jpg)
+
+
+![Paso15](imagenes/certificado-ssl.png)
+
 
 Aca activamos el ssl en apache con los siguentes comandos
-![Paso16](imagenes/Ataque-hydra.jpg)
+
+
+![Paso16](imagenes/ssl-apache.png)
+
 
 configuracion archivo ssl
-![Paso17](imagenes/Ataque-hydra.jpg)
+
+
+![Paso17](imagenes/archivo-config-ssl.png)
+
 
 Aqui se pude ver que con las configuraciones ya se puede entrar mediante esta url y coon eso se puede abrir wirehsark y ingresar la credneciales de la pagina para interveptarlas.
-![Paso18](imagenes/Ataque-hydra.jpg)
+![Paso18](imagenes/final.png)
 
 
