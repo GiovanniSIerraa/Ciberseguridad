@@ -14,12 +14,18 @@ Luego, se implementarán mecanismos de seguridad para proteger la comunicación.
 Finalmente, se volverá a analizar la red utilizando Wireshark con el objetivo de comprobar que la información ya no puede visualizarse de manera legible gracias al cifrado aplicado.
 
 HERRAMIENTAS
+
 Ubuntu Server (Servidor Web)
+
 Kali Linux
+
 Wireshark
+
 Apache
+
 SSH
 
+SSL
 ¿Qué se observará?
 Captura de tráfico HTTP sin cifrado utilizando Wireshark.
 Visualización de información transmitida en texto plano.
