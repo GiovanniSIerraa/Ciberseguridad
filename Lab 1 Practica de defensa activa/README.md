@@ -30,31 +30,64 @@ Se realizó una auditoría basada en las bases de datos del **NVD (National Vuln
 ## Desarrollo del Laboratorio y Evidencias
 
 A continuación, se detallan los pasos técnicos ejecutados en la consola del servidor Ubuntu para verificar el estado de los paquetes y configurar la automatización de las defensas.
-
+Aqui se pone un codigo para poder escanear mediante la maquina kali hacia la victima que estaria desactualizada, rdta contiene los parametros -sV para detectar servicios que estan en funcionamiento en la maquina, Ademas usamos el script vuln para detectar las vulnerabilidades que fueron detectadas.
 ![Paso1](imagenes/escaneo.png)
 
 
+Aqui podemos ver el resultado del escaneo
 ![Paso2](imagenes/escaneo-resultado.png)
+
+
+Vulnerabilidad 1: CVE-2023-38408
+
+Severidad según NVD: Crítica (Base Score: 9.8)
+
+Clasificación de Impacto: RCE (Ejecución Remota de Código)
+
+Hallazgo: De acuerdo con los datos del NIST/NVD, el componente ssh-agent en versiones de OpenSSH anteriores a la 9.3p2 gestiona de forma incorrecta las rutas de búsqueda para la función PKCS#11. Esto permite que un atacante que logre que la víctima le reenvíe su agente SSH pueda ejecutar código arbitrario y comandos remotos maliciosos aprovechando las librerías del sistema (/usr/lib).
 
 
 ![Paso3](imagenes/cve-1.png)
 
 
+
+Vulnerabilidad 2: CVE-2020-15778
+Severidad según NVD: Alta (Base Score: 7.8 HIGH).
+
+¿Qué permite hacer?: RCE (Ejecución Remota de Código).
+
+Hallazgo: La captura de la base de datos muestra que este fallo afecta a la función scp de OpenSSH. Un atacante puede realizar una inyección de comandos maliciosos a través de los nombres de los archivos transferidos. Dado que el destino ejecuta las operaciones mediante el shell, se logra la ejecución de código no autorizado con los privilegios del usuario.
+
+
 ![Paso4](imagenes/cve-2.png)
+
+
+
+
+Vulnerabilidad 3: CVE-2019-6110
+Severidad según NVD: Media (Base Score: 6.8 MEDIUM).
+
+¿Qué permite hacer?: Manipulación de archivos / RCE Indirecto.
+
+Hallazgo: Tal como se lee en la descripción de tu captura, el cliente OpenSSH acepta y muestra salidas de error (stderr) arbitrarias del servidor. Un atacante que realice un ataque Man-in-the-Middle (MitM) o que controle un servidor malicioso puede usar códigos de control ANSI para manipular la salida de la terminal del cliente y ocultar o alterar archivos críticos durante la transferencia, lo que compromete la integridad del sistema.
 
 
 ![Paso5](imagenes/cve-3.png)
 
 
+
+Aqui se actualiza
 ![Paso6](imagenes/update.png)
 
 
+Aqui aplicamos el parche
 ![Paso7](imagenes/parche.png)
 
-
+Aqui se instala 
 ![Paso8](imagenes/instalacion.png)
 
 
+Aqui ponemos el comando nano para entrar a la configuracion
 ![Paso9](imagenes/nano.png)
 
 
