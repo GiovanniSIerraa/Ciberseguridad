@@ -68,7 +68,7 @@ La captura confirma la ejecución limpia del comando de clonación, lo que permi
 En esta captura del archivo de configuración, se observa la parametrización de la jaula [sshd]. Se habilitó el servicio (enabled = true), se asignó el puerto estándar y se apuntó explícitamente al registro de auditoría de accesos del sistema (logpath = /var/log/auth.log). Además, se definieron las políticas críticas de baneo: un límite estricto de 5 reintentos fallidos (maxretry) y un tiempo de mitigación de 10 minutos (bantime = 10m). Luego de guardar, se aplicaron los cambios reiniciando el servicio.
 
 
-![Paso4](imagenes/copia-jail.local.png)
+![Paso4](imagenes/config-jail.local.png)
 
 
 
