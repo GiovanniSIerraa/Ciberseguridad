@@ -31,6 +31,34 @@ Se realizó una auditoría basada en las bases de datos del **NVD (National Vuln
 
 A continuación, se detallan los pasos técnicos ejecutados en la consola del servidor Ubuntu para verificar el estado de los paquetes y configurar la automatización de las defensas.
 
+![Paso1](imagenes/escaneo.png)
+
+
+![Paso2](imagenes/escaneo-resultado)
+
+
+![Paso3](imagenes/cve-1.png)
+
+
+![Paso4](imagenes/cve-2.png)
+
+
+![Paso5](imagenes/cve-3.png)
+
+
+![Paso6](imagenes/update.png)
+
+
+![Paso7](imagenes/parche.png)
+
+
+![Paso8](imagenes/instalacion.png)
+
+
+![Paso9](imagenes/nano.png)
+
+
+![Paso10](imagenes/configuracion.png)
 
 
 
