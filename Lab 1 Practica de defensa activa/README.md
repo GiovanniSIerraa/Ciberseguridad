@@ -31,11 +31,17 @@ Se realizó una auditoría basada en las bases de datos del **NVD (National Vuln
 
 A continuación, se detallan los pasos técnicos ejecutados en la consola del servidor Ubuntu para verificar el estado de los paquetes y configurar la automatización de las defensas.
 Aqui se pone un codigo para poder escanear mediante la maquina kali hacia la victima que estaria desactualizada, rdta contiene los parametros -sV para detectar servicios que estan en funcionamiento en la maquina, Ademas usamos el script vuln para detectar las vulnerabilidades que fueron detectadas.
+
+
 ![Paso1](imagenes/escaneo.png)
+
+
 
 
 Aqui podemos ver el resultado del escaneo
 ![Paso2](imagenes/escaneo-resultado.png)
+
+
 
 
 Vulnerabilidad 1: CVE-2023-38408
