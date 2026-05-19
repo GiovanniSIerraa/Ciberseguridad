@@ -80,7 +80,7 @@ Severidad según NVD: Media (Base Score: 6.8 MEDIUM).
 
 ¿Qué permite hacer?: Manipulación de archivos / RCE Indirecto.
 
-Hallazgo: Tal como se lee en la descripción de tu captura, el cliente OpenSSH acepta y muestra salidas de error (stderr) arbitrarias del servidor. Un atacante que realice un ataque Man-in-the-Middle (MitM) o que controle un servidor malicioso puede usar códigos de control ANSI para manipular la salida de la terminal del cliente y ocultar o alterar archivos críticos durante la transferencia, lo que compromete la integridad del sistema.
+Hallazgo: El cliente OpenSSH acepta y muestra salidas de error (stderr) del servidor. Un atacante que realice un ataque Man-in-the-Middle (MitM) o que controle un servidor malicioso puede usar códigos de control ANSI para manipular la salida de la terminal del cliente y ocultar o alterar archivos críticos durante la transferencia, lo que compromete la integridad del sistema.
 
 
 
