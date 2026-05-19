@@ -105,7 +105,7 @@ La captura de pantalla confirma la mitigación del incidente en el kernel de Lin
 
 
 
-Fail2Ban detectó que la máquina atacante (Kali Linux con la IP 192.168.1.186) superó el límite de 5 intentos fallidos que le configuraste en el archivo jail.local, y procedió a bloquearla de inmediato.
+Fail2Ban detectó que la máquina atacante (Kali Linux con la IP 192.168.1.186) superó el límite de 5 intentos fallidos que se configuro en el archivo jail.local, y procedió a bloquearla de inmediato.
 
 
 ![Paso9](imagenes/evidencia.png)
