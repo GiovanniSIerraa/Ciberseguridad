@@ -30,6 +30,8 @@ Se realizó una auditoría basada en las bases de datos del **NVD (National Vuln
 ## Desarrollo del Laboratorio y Evidencias
 
 A continuación, se detallan los pasos técnicos ejecutados en la consola del servidor Ubuntu para verificar el estado de los paquetes y configurar la automatización de las defensas.
+
+
 Aqui se pone un codigo para poder escanear mediante la maquina kali hacia la victima que estaria desactualizada, rdta contiene los parametros -sV para detectar servicios que estan en funcionamiento en la maquina, Ademas usamos el script vuln para detectar las vulnerabilidades que fueron detectadas.
 
 
@@ -39,6 +41,7 @@ Aqui se pone un codigo para poder escanear mediante la maquina kali hacia la vic
 
 
 Aqui podemos ver el resultado del escaneo
+
 ![Paso2](imagenes/escaneo-resultado.png)
 
 
@@ -88,22 +91,25 @@ Aqui se actualiza
 ![Paso6](imagenes/update.png)
 
 
-Aqui aplicamos el parche
+Aqui aplicamos el parche a los servicios
 
 
 ![Paso7](imagenes/parche.png)
 
-Aqui se instala
+
+Aqui se configuran las actualizaciones automaticas de seguridad
 
 
 ![Paso8](imagenes/instalacion.png)
 
 
-Aqui ponemos el comando nano para entrar a la configuracion
+Aqui ponemos el comando nano para entrar a la configuracion y configurar el unattended 
 
 
 ![Paso9](imagenes/nano.png)
 
+
+aqui podemos ver que se configuro las actualizaciones automaticas que sean solo acerca de seguridad
 
 ![Paso10](imagenes/configuracion.png)
 
