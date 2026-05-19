@@ -68,34 +68,34 @@ La captura confirma la ejecución limpia del comando de clonación, lo que permi
 En esta captura del archivo de configuración, se observa la parametrización de la jaula [sshd]. Se habilitó el servicio (enabled = true), se asignó el puerto estándar y se apuntó explícitamente al registro de auditoría de accesos del sistema (logpath = /var/log/auth.log). Además, se definieron las políticas críticas de baneo: un límite estricto de 5 reintentos fallidos (maxretry) y un tiempo de mitigación de 10 minutos (bantime = 10m). Luego de guardar, se aplicaron los cambios reiniciando el servicio.
 
 
-![Paso4](copia-jail.local.png)
+![Paso4](imagenes/copia-jail.local.png)
 
 
 
 El sistema operativo Kali incluye de manera nativa el diccionario de contraseñas corporativo rockyou.txt
 
 
-![Paso5](rockyou.png)
+![Paso5](imagenes/rockyou.png)
 
 
 Esta evidencia muestra a Hydra iniciando el bombardeo masivo de peticiones SSH de forma simultánea. El software empieza a testear combinaciones a alta velocidad, lo que genera intencionalmente un comportamiento anómalo masivo en los registros del servidor con el fin de forzar
 
 
-![Paso6](ataque-hydra.png)
+![Paso6](imagenes/ataque-hydra.png)
 
 
 Aqui se ve el monitoreo
 
-![Paso7](monitoreo.png)
+![Paso7](imagenes/monitoreo.png)
 
 
 defensa
 
-![Paso8](defensa.png)
+![Paso8](imagenes/defensa.png)
 
 
 Fail2Ban detectó que la máquina atacante (Kali Linux con la IP 192.168.1.186) superó el límite de 5 intentos fallidos que le configuraste en el archivo jail.local, y procedió a bloquearla de inmediato.
 
 
-![Paso9](evidencia.png)
+![Paso9](imagenes/evidencia.png)
 
