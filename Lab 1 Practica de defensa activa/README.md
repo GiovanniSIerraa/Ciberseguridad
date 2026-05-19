@@ -83,17 +83,25 @@ Hallazgo: Tal como se lee en la descripción de tu captura, el cliente OpenSSH a
 
 
 Aqui se actualiza
+
+
 ![Paso6](imagenes/update.png)
 
 
 Aqui aplicamos el parche
+
+
 ![Paso7](imagenes/parche.png)
 
-Aqui se instala 
+Aqui se instala
+
+
 ![Paso8](imagenes/instalacion.png)
 
 
 Aqui ponemos el comando nano para entrar a la configuracion
+
+
 ![Paso9](imagenes/nano.png)
 
 
