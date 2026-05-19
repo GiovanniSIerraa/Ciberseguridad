@@ -34,7 +34,7 @@ A continuación, se detallan los pasos técnicos ejecutados en la consola del se
 ![Paso1](imagenes/escaneo.png)
 
 
-![Paso2](imagenes/escaneo-resultado)
+![Paso2](imagenes/escaneo-resultado.png)
 
 
 ![Paso3](imagenes/cve-1.png)
