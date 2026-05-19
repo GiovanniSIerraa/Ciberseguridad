@@ -42,6 +42,7 @@ Aqui se pone un codigo para poder escanear mediante la maquina kali hacia la vic
 
 Aqui podemos ver el resultado del escaneo
 
+
 ![Paso2](imagenes/escaneo-resultado.png)
 
 
@@ -68,6 +69,7 @@ Severidad según NVD: Alta (Base Score: 7.8 HIGH).
 Hallazgo: La captura de la base de datos muestra que este fallo afecta a la función scp de OpenSSH. Un atacante puede realizar una inyección de comandos maliciosos a través de los nombres de los archivos transferidos. Dado que el destino ejecuta las operaciones mediante el shell, se logra la ejecución de código no autorizado con los privilegios del usuario.
 
 
+
 ![Paso4](imagenes/cve-2.png)
 
 
@@ -81,35 +83,46 @@ Severidad según NVD: Media (Base Score: 6.8 MEDIUM).
 Hallazgo: Tal como se lee en la descripción de tu captura, el cliente OpenSSH acepta y muestra salidas de error (stderr) arbitrarias del servidor. Un atacante que realice un ataque Man-in-the-Middle (MitM) o que controle un servidor malicioso puede usar códigos de control ANSI para manipular la salida de la terminal del cliente y ocultar o alterar archivos críticos durante la transferencia, lo que compromete la integridad del sistema.
 
 
+
+
 ![Paso5](imagenes/cve-3.png)
+
 
 
 
 Aqui se actualiza
 
 
+
 ![Paso6](imagenes/update.png)
+
 
 
 Aqui aplicamos el parche a los servicios
 
 
+
 ![Paso7](imagenes/parche.png)
+
 
 
 Aqui se configuran las actualizaciones automaticas de seguridad
 
 
+
 ![Paso8](imagenes/instalacion.png)
 
 
+
 Aqui ponemos el comando nano para entrar a la configuracion y configurar el unattended 
+
 
 
 ![Paso9](imagenes/nano.png)
 
 
 aqui podemos ver que se configuro las actualizaciones automaticas que sean solo acerca de seguridad
+
 
 ![Paso10](imagenes/configuracion.png)
 
