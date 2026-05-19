@@ -41,6 +41,7 @@ Para el desarrollo de esta simulación defensiva y ofensiva se emplearon los sig
 * **Hydra:** Herramienta de cracking de inicios de sesión en paralelo rápida y flexible, utilizada para simular la amenaza.
 * **Rockyou.txt:** Diccionario estándar de auditorías de contraseñas de seguridad de la información que almacena millones de cadenas de texto de uso común.
 * **Iptables:** Filtro de paquetes nativo del kernel de Linux utilizado para aplicar las reglas de baneo y denegación de tráfico.
+* ssh
 
 ---
 
@@ -48,6 +49,8 @@ Para el desarrollo de esta simulación defensiva y ofensiva se emplearon los sig
 
 A continuación, se describen de manera cronológica los pasos técnicos ejecutados en ambas máquinas virtuales para la instalación, simulación del ataque, monitoreo en tiempo real y verificación de las defensas.
 
+
+Primero tenemos que tener ya levantado el ssh en la maquina.
 
 En la consola de Ubuntu Server, se ejecutó la instalación del servicio fail2ban.
 
@@ -59,13 +62,16 @@ ahora se instala hydra
 ![Paso2](imagenes/instalacion-hydra.png)
 
 
+
 La captura confirma la ejecución limpia del comando de clonación, lo que permite generar un entorno de configuración aislado y seguro siguiendo las buenas prácticas de administración de sistemas Linux.
+
 
 
 ![Paso3](imagenes/copia-fail2ban.png)
 
 
 En esta captura del archivo de configuración, se observa la parametrización de la jaula [sshd]. Se habilitó el servicio (enabled = true), se asignó el puerto estándar y se apuntó explícitamente al registro de auditoría de accesos del sistema (logpath = /var/log/auth.log). Además, se definieron las políticas críticas de baneo: un límite estricto de 5 reintentos fallidos (maxretry) y un tiempo de mitigación de 10 minutos (bantime = 10m). Luego de guardar, se aplicaron los cambios reiniciando el servicio.
+
 
 
 ![Paso4](imagenes/config-jail.local.png)
@@ -78,20 +84,25 @@ El sistema operativo Kali incluye de manera nativa el diccionario de contraseña
 ![Paso5](imagenes/rockyou.png)
 
 
-Esta evidencia muestra a Hydra iniciando el bombardeo masivo de peticiones SSH de forma simultánea. El software empieza a testear combinaciones a alta velocidad, lo que genera intencionalmente un comportamiento anómalo masivo en los registros del servidor con el fin de forzar
+Esta evidencia muestra a Hydra iniciando el bombardeo masivo de peticiones, fuerza bruta. El software empieza a testear combinaciones a alta velocidad, lo que genera intencionalmente un comportamiento anómalo masivo en los registros del servidor con el fin de forzar
 
 
 ![Paso6](imagenes/ataque-hydra.png)
 
 
-Aqui se ve el monitoreo
+
+Aqui se ve el monitoreo que se dejo antes de hacer el ataque
 
 ![Paso7](imagenes/monitoreo.png)
 
 
-defensa
+
+La captura de pantalla confirma la mitigación del incidente en el kernel de Linux. Dentro de la cadena Chain f2b-sshd, se observa una regla activa con la acción REJECT dirigida específicamente a la dirección IP del atacante 192.168.1.186. El firewall rechaza de forma automática cualquier paquete entrante desde ese host e invalida nuevos intentos de conexión SSH, finalizando con éxito la respuesta automatizada ante incidente.
+
+
 
 ![Paso8](imagenes/defensa.png)
+
 
 
 Fail2Ban detectó que la máquina atacante (Kali Linux con la IP 192.168.1.186) superó el límite de 5 intentos fallidos que le configuraste en el archivo jail.local, y procedió a bloquearla de inmediato.
